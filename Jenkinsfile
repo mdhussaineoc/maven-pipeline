@@ -7,9 +7,7 @@ pipeline {
     stages {
         stage('creating a custom webpage') {
             steps {
-                    sh """cat > index.html << EOF
-                          Welcome to Jenkins Learning
-                          EOF"""
+                    sh "echo -e "welcome to jenkins learning" > index.html"
                 }
           }
         stage('Build') {
