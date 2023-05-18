@@ -8,7 +8,7 @@ pipeline {
         stage('creating a custom webpage') {
             steps {
                     sh """cat > index.html << EOF
-                          Welcome to Docker Learning
+                          Welcome to Jenkins Learning
                           EOF"""
                 }
           }
