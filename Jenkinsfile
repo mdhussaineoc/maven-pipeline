@@ -14,7 +14,7 @@ pipeline {
           }
         stage('Build') {
             steps {
-                sh "docker build --pull -t ${IMAGE}:${TAG} ."
+                sh "docker build -t ${IMAGE}:${TAG} ."
             }
         }
         stage('run a container'){
